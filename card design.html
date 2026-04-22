@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Beauty Essentials</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+/* Card */
+.card {
+    width: 260px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    position: relative;
+}
+
+/* Hover */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Badge */
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff4081;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Content */
+.content {
+    padding: 15px;
+    text-align: center;
+}
+
+.content h2 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.content p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Price */
+.price {
+    margin: 8px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Button */
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #ff4081;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e91e63;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <div class="badge">NEW</div>
+        <img src="https://i.pravatar.cc/300?img=20">
+        <div class="content">
+            <h2>Vitamin C Serum</h2>
+            <p>Brightens and smoothens skin</p>
+            <div class="price">₹499</div>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="badge">SALE</div>
+        <img src="https://i.pravatar.cc/300?img=25">
+        <div class="content">
+            <h2>Matte Lipstick</h2>
+            <p>Long-lasting bold color</p>
+            <div class="price">₹299</div>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pravatar.cc/300?img=30">
+        <div class="content">
+            <h2>Face Moisturizer</h2>
+            <p>Hydrates and nourishes skin</p>
+            <div class="price">₹399</div>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="badge">HOT</div>
+        <img src="https://i.pravatar.cc/300?img=35">
+        <div class="content">
+            <h2>Hair Serum</h2>
+            <p>Smooth & shiny hair instantly</p>
+            <div class="price">₹349</div>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Creative Card Layout</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #dfe9f3, #ffffff);
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background: #111;
+    padding: 12px;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00ffcc;
+    transform: scale(1.1);
+}
+
+/* Section */
+section {
+    padding: 30px;
+}
+
+/* Grid layout (changed from flex) */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Card Top */
+.card-header {
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Different colors per card */
+.card:nth-child(1) .card-header { background: #ff6a00; }
+.card:nth-child(2) .card-header { background: #00c6ff; }
+.card:nth-child(3) .card-header { background: #7f00ff; }
+.card:nth-child(4) .card-header { background: #00b09b; }
+
+/* Body */
+.card-body {
+    padding: 15px;
+    font-size: 14px;
+    color: #555;
+    flex: 1;
+}
+
+/* Button */
+.card-footer {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-footer button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-footer button:hover {
+    background: #ff6a00;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #111;
+    color: white;
+    margin-top: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Creative Card Dashboard</h1>
+</header>
+
+<nav>
+    <a href="#">Dashboard</a>
+    <a href="#">Profile</a>
+    <a href="#">Projects</a>
+    <a href="#">Settings</a>
+</nav>
+
+<section>
+<div class="container">
+
+    <div class="card">
+        <div class="card-header">🚀 Growth</div>
+        <div class="card-body">Track your progress and improve performance over time.</div>
+        <div class="card-footer"><button>Open</button></div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">📊 Analytics</div>
+        <div class="card-body">View detailed analytics and insights of your data.</div>
+        <div class="card-footer"><button>Open</button></div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">⚡ Speed</div>
+        <div class="card-body">Optimized performance for faster user experience.</div>
+        <div class="card-footer"><button>Open</button></div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">🔒 Security</div>
+        <div class="card-body">Advanced protection to keep your data safe.</div>
+        <div class="card-footer"><button>Open</button></div>
+    </div>
+
+</div>
+</section>
+
+<footer>
+    © 2026 Creative UI Design
+</footer>
+
+</body>
+</html>
